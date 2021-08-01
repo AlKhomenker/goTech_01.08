@@ -22,13 +22,32 @@ h5{
 }
 
 .paginationBlock{
-  width: 100%;
+  width: 90%;
   position: absolute;
   bottom: 0;
 }
 
 .pagination{
+  width: 100%;
   display: flex;
   justify-content: center;
   margin: 50px 0 0;
+}
+
+
+/*-------------- Tablet --------------*/
+@media only screen and (max-width: 770px) {
+  .wrapper{
+    width: 80%;
+  }
+  .container{
+    padding: 20px 20px 0;
+  }
+}
+
+/*-------------- Phone --------------*/
+@media only screen and (max-width: 420px) {
+  .wrapper{
+    width: 90%;
+  }
 }

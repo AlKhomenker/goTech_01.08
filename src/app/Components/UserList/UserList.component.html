@@ -5,16 +5,12 @@
       <h5> Candidate Name:</h5>
     </div>
 
-    <div>
-      <app-userCard></app-userCard>
-      <app-userCard></app-userCard>
-      <app-userCard></app-userCard>
-      <app-userCard></app-userCard>
-      <app-userCard></app-userCard>
+    <div *ngFor="let item of userslist.slice(currentIndex, lastIndex)">
+      <app-userCard [data]="item"></app-userCard>
     </div>
 
-    <div class="pagination">
-      <app-pagination></app-pagination>
+    <div class="paginationBlock">
+        <app-pagination [listLength]="userslist.length" (onDateChange)="onDataChange($event)" class="pagination"></app-pagination>
     </div>
 
   </div>

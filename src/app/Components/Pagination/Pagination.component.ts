@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-pagination',
@@ -6,8 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./Pagination.component.css']
 })
 
-export class Pagination {
-  page = 1;
+export class Pagination{
+
+  @Input() listLength: any;
+  currentPage: number = 1;
+
+  @Output() onDateChange = new EventEmitter<any>();
+
+  public onPageChange(pageNum: number): void {
+    this.onDateChange.emit(pageNum);
+  }
+
+
 }
 
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import { faMapMarkerAlt, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -6,10 +6,13 @@ import { faMapMarkerAlt, faBriefcase } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './UserCard.component.html',
   styleUrls: ['./UserCard.component.css']
 })
-export class UserCard {
+export class UserCard{
+
+  @Input() data: any;
 
   faBriefcase = faBriefcase;
   faMapMarkerAlt = faMapMarkerAlt;
+
 }
 
 

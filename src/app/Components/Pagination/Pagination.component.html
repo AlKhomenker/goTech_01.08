@@ -1,2 +1,2 @@
 
-<ngb-pagination [collectionSize]="120" [(page)]="page" [maxSize]="3" ></ngb-pagination>
+<ngb-pagination [collectionSize]="listLength" [(page)]="currentPage" [pageSize]="5" (pageChange)="onPageChange($event)"></ngb-pagination>

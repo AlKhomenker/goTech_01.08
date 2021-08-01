@@ -1,0 +1,25 @@
+.wrapper{
+  width: 50%;
+  background-color: #F5F5F5;
+  padding: 10px;
+  margin: 100px auto;
+  border-radius: 0.25rem;
+}
+
+.container{
+  padding: 20px 0 20px 20px;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+h5{
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0;
+}

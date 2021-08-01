@@ -1,0 +1,34 @@
+.wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 20px  0;
+  border-top: 2px solid gainsboro;
+}
+
+.avatar{
+  width: 80px;
+  height: 80px;
+  margin: 0 20px 0 0;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.userInfo{
+  display: flex;
+  justify-content: space-between;
+}
+
+h3{
+  color: #0d6efd;
+}
+
+p{
+  color: darkgray;
+  margin: 0 20px 0 0;
+}
